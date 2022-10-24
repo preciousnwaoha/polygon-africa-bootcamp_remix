@@ -6,6 +6,30 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "answer",
+						"type": "string"
+					}
+				],
+				"name": "NewAnswer",
+				"type": "event"
+			},
+			{
 				"anonymous": false,
 				"inputs": [
 					{
@@ -27,21 +51,48 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
+						"internalType": "string",
+						"name": "input",
+						"type": "string"
 					}
 				],
-				"name": "answers",
+				"name": "answer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAnswers",
 				"outputs": [
 					{
-						"internalType": "address",
-						"name": "from",
-						"type": "address"
-					},
+						"components": [
+							{
+								"internalType": "address",
+								"name": "from",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "answer",
+								"type": "string"
+							}
+						],
+						"internalType": "struct SayGM.Answer[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getPrompt",
+				"outputs": [
 					{
 						"internalType": "string",
-						"name": "answer",
+						"name": "",
 						"type": "string"
 					}
 				],
@@ -82,6 +133,26 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "newPrompt",
+						"type": "string"
+					}
+				],
+				"name": "setPrompt",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tip",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "tips",
 				"outputs": [
@@ -105,6 +176,13 @@
 				"name": "transferOwnership",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -162,11 +240,11 @@
 			]
 		},
 		"contracts/saygm.sol": {
-			"keccak256": "0x897d914e8d84dfc14bb3e2218a8f7b18504846cd27a9d40bd5d5e7aeb9f2cd31",
+			"keccak256": "0xfb8020647bbd76557b6723d91eb823d2c01b7f40fc03d48b92929186f9144de1",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://76e57572e1dc86f226ac247d84d74daa2c6020a65c5eb3a26622cd52f48cf63d",
-				"dweb:/ipfs/Qmc1HPxKtWPkdWJ15hmQz9QPjgdU4szPxiBW2ZCkmzKj2L"
+				"bzz-raw://2ae843fb7a5e23c71329907b4e1255c7e86f86b8b11444fc869347c48d785beb",
+				"dweb:/ipfs/Qmee1rDf1BM8njppVYawrjfSi6226hUEMDAW8Gj5xyYgSF"
 			]
 		}
 	},
