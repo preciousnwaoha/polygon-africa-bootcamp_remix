@@ -1,0 +1,47 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Implements voting process along with vote delegation",
+			"kind": "dev",
+			"methods": {},
+			"title": "Ballot",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ERC20.sol": "ERC"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ERC20.sol": {
+			"keccak256": "0x9bdf3e830b13b07af3462ead957060123b74d256e3ad8ee3dd48d7e28d451c31",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://7ee7f942dbf690eb3bb0d95a49de2582ef62d052b931f27942002fdc473ef16c",
+				"dweb:/ipfs/QmdRN7xmQRhf6Qa28FxeWg3dpJKyXhKR7Gq86issKw5eNB"
+			]
+		}
+	},
+	"version": 1
+}
